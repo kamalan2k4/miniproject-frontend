@@ -8,7 +8,8 @@ export default function Home() {
   const router = useRouter();
   
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-gray-900 via-purple-900 to-black text-white p-10">
+    <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-gray-900 via-purple-900 to-black text-white p-10 pb-20">
+
       <div className="text-center">
         <h1 className="text-5xl font-extrabold mb-6 animate-pulse">🚀 Cyberbullying Detection</h1>
         <p className="text-xl mb-8 italic text-gray-300">Identify and prevent harmful online interactions</p>
@@ -33,7 +34,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="absolute bottom-6 text-gray-400 text-sm">
+      <div className="absolute bottom-6 text-gray-400 text-sm w-full text-center px-4 pb-4">
+
         <p>💡 Stay safe online. Report and prevent cyberbullying.</p>
       </div>
     </div>
