@@ -37,7 +37,7 @@ export default function PredictionResult() {
             <h2 className="text-3xl font-bold mb-4">{prediction?.label}</h2>
 <p className="text-lg mb-4">
   Offensiveness Score: <span className="font-bold text-yellow-400">
-    {(prediction?.offensiveness ?? 0) * 100}%
+    {(prediction?.offensiveness ?? 0)}%
   </span>
 </p>
 <p className="text-md text-gray-300">{prediction?.message}</p>

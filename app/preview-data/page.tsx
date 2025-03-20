@@ -20,6 +20,7 @@ export default function PreviewData() {
     if (!uploadedData) return;
     
     try {
+      // const response = await fetch('https://miniproject-backend-ppj7.onrender.com/api/predict', {
       const response = await fetch('http://127.0.0.1:5000/api/predict', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
