@@ -7,6 +7,7 @@ export default function PreviewData() {
   const router = useRouter();
   const [uploadedData, setUploadedData] = useState(null);
   const [loading, setLoading] = useState(true);
+  const API_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 
   useEffect(() => {
     const storedData = sessionStorage.getItem('uploadedData');
@@ -20,8 +21,8 @@ export default function PreviewData() {
     if (!uploadedData) return;
     
     try {
-      // const response = await fetch('https://miniproject-backend-ppj7.onrender.com/api/predict', {
-      const response = await fetch('http://127.0.0.1:5000/api/predict', {
+      const response = await fetch(`${API_URL}/api/predict`, {
+      // const response = await fetch('http://127.0.0.1:5000/api/predict', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ content: uploadedData })
