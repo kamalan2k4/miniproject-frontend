@@ -34,9 +34,11 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="absolute bottom-6 text-gray-400 text-sm w-full text-center px-4 pb-4">
-
-        <p>💡 Stay safe online. Report and prevent cyberbullying.</p>
+     {/* Footer fixed to bottom */}
+     <div className="fixed bottom-4 w-full text-center px-4">
+        <p className="text-gray-400 text-sm bg-black bg-opacity-50 px-3 py-2 rounded-lg inline-block">
+          💡 Stay safe online. Report and prevent cyberbullying.
+        </p>
       </div>
     </div>
   );
