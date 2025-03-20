@@ -52,7 +52,7 @@ export default function AnalysisPage() {
           <p className="text-xl text-gray-400 animate-pulse">Generating analysis...</p>
         ) : analysis ? (
           <div className="w-full flex flex-col items-center">
-            <h2 className="text-3xl font-bold mb-4">Offensiveness Score: <span className="text-yellow-400">{(analysis.offensiveness * 100).toFixed(2)}%</span></h2>
+            <h2 className="text-3xl font-bold mb-4">Offensiveness Score: <span className="text-yellow-400">{analysis.offensiveness}%</span></h2>
             <p className="text-md text-gray-300 mb-6">{analysis.message}</p>
             <div className="w-72 h-72">
               <Pie data={data} />
