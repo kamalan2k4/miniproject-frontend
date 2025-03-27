@@ -35,11 +35,11 @@ export default function PredictionResult() {
         ) : prediction ? (
           <div className="overflow-y-auto max-h-80 border border-gray-700 rounded-lg p-4 bg-gray-800">
             <h2 className="text-3xl font-bold mb-4">{prediction?.label}</h2>
-<p className="text-lg mb-4">
+{/* <p className="text-lg mb-4">
   Offensiveness Score: <span className="font-bold text-yellow-400">
     {(prediction?.offensiveness ?? 0)}%
   </span>
-</p>
+</p> */}
 <p className="text-md text-gray-300">{prediction?.message}</p>
 
           </div>

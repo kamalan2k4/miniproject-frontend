@@ -27,6 +27,7 @@ export default function PreviewData() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ content: uploadedData })
       });
+      console.log("Backend URL:", API_URL);
       
       const result = await response.json();
       sessionStorage.setItem('predictionResult', JSON.stringify(result));
